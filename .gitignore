@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+yarn.lock
+package-lock.json
 
 
 # local env files
@@ -21,3 +23,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+#Electron-builder output
+/veet_dist
+/veet_electron

@@ -8,6 +8,19 @@
 			<el-button type="info">我是按钮</el-button>
 		</el-col>
 	</el-row>
+	<el-row style="marginTop: 10px" type="flex" align="middle" justify="center">
+		<el-col :span="20">
+			推荐一款软件:
+			<el-link type="success" :style="[{fontSize: '20px'}, {fontWeight: 'bold'}]">brick</el-link>
+			（开发中）
+			<el-tag size="mini" type="danger">尽情期待</el-tag>
+		</el-col>
+	</el-row>
+	<el-row style="marginTop: 10px" type="flex" align="middle" justify="center">
+		<el-col :span="20">
+			介绍：brick是一款桌面应用软件,方便上班族日常办公时实时关注股票,喝水提醒,高阶摸鱼小工具等一系列骚操作合集
+		</el-col>
+	</el-row>
   <router-view />
 </template>
 
