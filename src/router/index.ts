@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHistory, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -18,8 +18,13 @@ const routes: Array<RouteRecordRaw> = [
   },
 ];
 
+const history =
+    process.env.NODE_ENV === 'production' && process.env.IS_ELECTRON
+        ? createWebHashHistory(process.env.BASE_URL)
+        : createWebHistory(process.env.BASE_URL)
+
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history,
   routes,
 });
 

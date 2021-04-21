@@ -11,8 +11,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
+  "mainComment": "app.asar There must be a main entry. In fact, the app.asar Decompress and you'll find that there are background.js So our package.json To set the entry in, that is, main: background.js",
+  "main": "background.js",
   "dependencies": {
     "core-js": "^3.10.2",
     "element-plus": "^1.0.2-beta.40",
@@ -21,6 +27,7 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@types/electron-devtools-installer": "^2.2.0",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "@vue/cli-plugin-babel": "^5.0.0-alpha.8",
@@ -32,12 +39,15 @@
     "@vue/compiler-sfc": "^3.0.11",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
+    "electron": "^13.0.0-beta.16",
+    "electron-devtools-installer": "^3.2.0",
     "eslint": "^7.24.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
     "prettier": "^2.2.1",
     "sass": "^1.32.11",
     "sass-loader": "^11.0.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "vue-cli-plugin-electron-builder": "^2.0.0-rc.6"
   }
 }
