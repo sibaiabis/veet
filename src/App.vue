@@ -3,6 +3,11 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
+	<el-row type="flex" align="middle" justify="center">
+		<el-col :span="8">
+			<el-button type="info">我是按钮</el-button>
+		</el-col>
+	</el-row>
   <router-view />
 </template>
 
