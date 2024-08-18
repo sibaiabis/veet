@@ -25,15 +25,6 @@ vue-cli-plugin-electron-builder | 2.0.0-rc.6 | latest
 
 -----------------------------------
 
-## 软件推荐
-
-> ~~brick（开发中）~~
-> > ~~[官方网址](http://brickpro.cn)~~
-> > > ~~介绍：brick是一款桌面应用软件,方便上班族日常办公时实时关注股票,喝水提醒,高阶摸鱼小工具等一系列骚操作合集~~
-> > > ~~```尽情期待```~~
-
------------------------------------
-
 ## 如何使用
 
 ### 安装依赖
@@ -75,3 +66,13 @@ npm run lint
 ### 自定义vueCli配置
 
 看 [Configuration Reference](https://cli.vuejs.org/config/).
+
+-----------------------------------
+
+## 安装
+![image](https://github.com/user-attachments/assets/0bd12a0d-a55e-4ea6-b205-582e9b7669f1)
+
+-----------------------------------
+
+## 启动/查看
+![image](https://github.com/user-attachments/assets/9dc80bb2-8547-491f-89f2-297a18f38d29)
